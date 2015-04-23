@@ -91,6 +91,7 @@ impl Glyph {
         }
     }
 
+    /// DEPRECATED: use advance_x and advance_y instead
     pub fn advance(&self) -> ffi::FT_Vector {
         unsafe {
             (*self.raw).advance
